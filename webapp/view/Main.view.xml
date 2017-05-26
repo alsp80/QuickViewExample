@@ -1,0 +1,33 @@
+<mvc:View 
+	controllerName="QuickViewExample.controller.Main"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	displayBlock="true"
+	xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<l:VerticalLayout>
+			<l:content>
+				<Button id="employeeQuickView"
+						class="sapUiSmallMarginBottom"
+						text="Employee QuickView"
+						width="200px"
+						press="handleEmployeeQuickViewPress" />
+				<Button id="showQuickView"
+						class="sapUiSmallMarginBottom"
+						text="Company QuickView"
+						width="200px"
+						press="handleCompanyQuickViewPress" />
+				<Button id="genericQuickView"
+						class="sapUiSmallMarginBottom"
+						text="Generic QuickView"
+						width="200px"
+						press="handleGenericQuickViewPress" />
+			</l:content>
+		</l:VerticalLayout>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
